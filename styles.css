@@ -1,0 +1,870 @@
+@font-face {
+    font-family: mellat;
+    src: url(fonts/mj_flow.ttf);
+}
+@font-face {
+    font-family: mellatB ;
+    src: url(fonts/mj_flow_bold.ttf);
+}
+@font-face {
+    font-family: iranyekan;
+    src: url(fonts/iranyekan.woff2);
+}
+@font-face {
+    font-family: iransans;
+    src: url(fonts/iransans.ttf);
+}
+@font-face{
+    font-family : mj_flow ; 
+    src : url(fonts/mj_flow.ttf) ; 
+}
+@font-face{
+    font-family : mj_flow_bold ; 
+    src : url(fonts/mj_flow_bold.ttf) ; 
+}
+
+body{
+    margin: 0;
+    
+}
+
+#header > #head {
+    background: repeat url(images/header_bg.jpg) ;            
+    height: 136px;
+    
+
+}
+#header > #head > #headHolder{
+    \\border: 1px solid gray;
+    height: 136px;
+    width: 90%;
+    max-width: 1000px;
+    min-width: 600px;
+    position: relative;
+    margin: 0 auto 0;
+}
+
+#header > #head > #headHolder > .btnHolder{
+    border: 1px solid gray;
+    width: 310px;
+    height: 43px;
+    position: absolute;
+    left: 20px;
+    top: 1px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.233);
+    padding: 4px 2px 2px 2px ;
+    
+}
+#header > #head > #headHolder > .btnHolder > .button{
+    \\border: 1px solid black;
+    border-radius: 4px;
+    float: left;
+    width: 48%;
+    height: 84%;
+    margin:1px 3px 1px 3px;
+    text-align: center;
+    line-height: 220%;
+    font-family: mellatB;
+    color: white;
+}
+#header > #head > #headHolder > .btnHolder > .button#club {
+    background-image: linear-gradient(rgb(254, 150, 50) 0%, rgb(255, 120, 0) 100%);
+    box-shadow: 0px 4px 0px 0px #a05210;
+    
+}
+#header > #head > #headHolder > .btnHolder > .button#club:hover{
+    background-image: linear-gradient(rgb(255, 120, 0) 100%, rgb(255, 187, 124) 100%);
+    cursor: pointer;
+}
+#header > #head > #headHolder > .btnHolder > .button#ebanking{
+    background-image: linear-gradient(rgba(247,68,53,1) 0%,rgba(198,0,0,1) 100%);
+    box-shadow: 0px 4px 0px 0px #8a0505;
+}
+#header > #head > #headHolder > .btnHolder > .button#ebanking:hover{
+    background-image: linear-gradient(rgba(198,0,0,1) 100%,rgba(247,68,53,1) 0%);
+    cursor: pointer;
+}
+
+
+#header > #head > #headHolder > #langHolder{
+    position: absolute;
+    right: 147px;
+    top: 1px;
+    width: 28px;
+    height: 16px;
+    border: 1px solid gray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.233);
+    padding: 4px 2px 2px 2px ;
+    color: rgb(184, 184, 184);
+    text-align: center;
+    line-height: 16px;
+    font-family: tahoma;
+    font-size: 0.85em;
+}
+#header > #head > #headHolder > #dateHolder{
+    position: absolute;
+    right: 20px;
+    top: 1px;
+    width: 120px;
+    height: 16px;
+    border: 1px solid gray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.233);
+    padding: 4px 2px 2px 2px ;
+    color: rgb(184, 184, 184);
+    text-align: center;
+    line-height: 16px;
+    font-family: iransans;
+    font-size: 66%;
+
+}
+
+#header > #head > #headHolder > #searchBox{
+    background-color: #444648;
+    border: 0px solid gray;
+    border-radius:12px ;
+    height: 30px;
+    width: 150px;
+    position: absolute;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    left: 20px;
+    top: 75px;
+    padding-left:5px ;
+    background-image: url(images/search-icon.png);
+    background-position-x:100% ;
+    background-repeat: no-repeat;
+    padding: 3px;
+    padding-right: 30px;
+    direction: rtl;
+}
+
+#header > #head > #headHolder > #searchBox:focus{
+    transition: 0.3s;
+    width: 200;
+    background-color:rgb(231, 231, 231) ;
+    outline:none;
+}
+
+
+
+#header > #head > #headHolder > #logo{
+    background-image: url("images/logo-area-bg.jpg");
+    height: 136px;
+    width: 312px;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    
+}
+#header > #menuHolder {
+    background-color:rgb(231, 231, 231);
+    box-shadow:0px 2px 6px 0 rgba(0 , 0 , 0,0.4); 
+}
+#header > #menuHolder > #menu{
+    \\border: 1px solid black;
+    height: 64px;
+    width: 600px;
+    margin: 0 auto 0;
+    position: relative;
+}
+#header > #menuHolder > #menu > .items{
+    float: right;
+    \\border: 1px solid red;
+    height: 61px;
+    padding:0 5px 0 5px;
+    margin: 0 18px 0;
+    
+    text-align: center;
+    line-height: 62px;
+    font-family: mellatB;
+    font-size: 100%;
+    color: rgba(0, 0, 0, 0.7);
+
+}
+#header > #menuHolder > #menu > .items:hover{
+    transition: 0.4s;
+    color: red;
+    cursor: pointer;
+    border-bottom:3px solid red;
+
+}
+
+#header > #menuHolder > #menu >  .hasSubMenu > div{
+    \\border: 1px solid black;
+    box-shadow: 0 5px 7px 0 rgba(0 , 0 , 0,0.1);
+    background-color: rgb(231, 231, 231);
+    height: 0px;
+    width: 800px;
+    position: absolute;
+    top: 64px;
+    right: -110px;
+    opacity: .0;
+    z-index: 1;
+    padding: 5px 4% 0 0;
+    visibility: hidden;
+
+    
+    
+}
+#header > #menuHolder > #menu >  .hasSubMenu:hover > div{
+    transition: 0.3s;
+    height: auto;
+    opacity: .97;
+    visibility: visible;
+   
+}
+
+#header > #menuHolder > #menu > #it5{
+    color: rgb(255, 106, 0);
+}
+
+#header > #menuHolder > #menu >  .hasSubMenu > div > ul{
+    float: right;
+    \\border: 1px solid black;
+    font-family: mellatB;
+    font-size: 0.85em;
+    color: red;
+    line-height: 28px;
+    text-align: right;
+    margin: 0 1% 10px 0;
+    list-style: none;
+    padding: 0;
+    width: 23%;
+}
+#header > #menuHolder > #menu >  .hasSubMenu > div > ul >li{
+    \\border: 1px solid black;
+    font-family: iranyekan;
+    font-size: 0.85em;
+    color: rgba(0, 0, 0, 0.95);
+    padding: 0;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#content{
+    \\border: 1px solid black;
+    background: repeat-x url("images/content-bg.png");
+    \\height: 1400px;
+    margin:4px auto 0 ;
+
+    padding: 10px 0 0px 0;
+    border-bottom: 3px solid red;
+    
+}
+#content > #contentHolder{
+    \\border: 1px solid gray;
+    width: 90%;
+    max-width: 1000px;
+    min-width: 600px;
+    margin: 10px auto 1px auto;
+    \\height: 1300px;
+    padding-bottom: 0;
+}
+
+#content > #contentHolder > #sliderHolder{
+    \\border: 1px solid red;
+    width: 860px;
+    height: 395px;
+    margin: 10px auto 0;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 20px 20px -8px gray;
+    position: relative;
+    
+
+}
+
+
+#content > #contentHolder > #sliderHolder > #positionHolder{
+    box-shadow:  0 0 0 1px gray;
+    background: linear-gradient(to bottom, #ffffff 0%,#d4d4d4 100%);
+    width: 140px;
+    height: 22px;
+    border-radius: 2px;
+    
+    position: absolute;
+    
+
+    bottom: -10px;
+    left: 360px;
+
+    
+
+}
+
+#content > #contentHolder > #sliderHolder > #positionHolder > .dots{
+    width: 14px;
+    height: 14px;
+    margin: 4px 8px 4px 0;
+    background-color: rgba(190, 190, 190, 0.164);
+    
+    box-shadow: 0 0 5px 1px gray inset;
+    
+    border-radius:50% ;
+    float: left;
+    cursor: pointer;
+}
+
+#content > #contentHolder > #sliderHolder > #positionHolder > .dots:first-child{
+    margin-left: 8px;
+}
+
+#content > #contentHolder > #sliderHolder > #positionHolder > .dots.active{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 3px 3px gray inset;
+
+
+}
+
+#content > #contentHolder > #sliderHolder > #sliderPicHolder{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+    overflow: hidden;
+}
+#content > #contentHolder > #sliderHolder > #sliderPicHolder > #right{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+    position: absolute;
+    top: 40%;
+    right: -50px;
+
+
+    \\border: 1px solid white;
+    \\border-radius: 5px;
+    width: 50px;
+    height: 70px;
+    background: url("img/slider/right.png") no-repeat black 60% ;
+    background-size: 50%;
+    cursor:pointer;
+}
+#content > #contentHolder > #sliderHolder > #sliderPicHolder:hover > #right{
+    opacity: 0.3;
+    visibility: visible;
+    right: 10px;
+
+
+}
+#content > #contentHolder > #sliderHolder > #sliderPicHolder > #left{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+    position: absolute;
+    top: 40%;
+    left: -50px;
+
+
+
+    \\border: 1px solid white;
+    \\border-radius: 5px;
+
+    width: 50px;
+    height: 70px;
+    background:url("img/slider/left.png") no-repeat black 40% ;
+    background-size: 50%;
+    cursor:pointer;
+}   
+#content > #contentHolder > #sliderHolder > #sliderPicHolder:hover > #left {
+    opacity: 0.3;
+    visibility: visible;
+
+    left: 10px;
+}
+
+#content > #contentHolder > #sliderHolder > #sliderPicHolder > #slider{
+    \\position: relative;
+
+    \\border: 1px solid black;
+    
+    overflow: hidden;
+
+    margin: auto;
+
+    font-family: tahoma;
+
+}
+
+
+
+
+
+
+#content > #contentHolder > #sliderHolder > #sliderPicHolder > #slider > .pics{
+    
+    
+    position: absolute;
+    left: 0%;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+
+}
+
+#content > #contentHolder > #sliderHolder > #sliderPicHolder > #slider > .pics.front{
+    transition: 0.3s;
+    position: absolute;
+    left: 0%;
+    visibility: visible;
+
+}
+#content > #contentHolder > #sliderHolder > #sliderPicHolder > #slider > .pics.left{
+    transition: 0.3s;
+    position: absolute;
+    left: -100%;
+    visibility: hidden;
+
+}
+#content > #contentHolder > #sliderHolder > #sliderPicHolder > #slider > .pics.right{
+    transition: 0.3s;
+    position: absolute;
+    left: 100%;
+    visibility: hidden;
+
+}
+
+#content > #contentHolder > #sliderHolder > #sliderPicHolder > #slider > .pics > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+#content > #contentHolder > #sliderMenuHolder {
+    \\border: 1px solid black;
+    height: 460px;
+    width: 95%;
+    margin:40px auto 4px auto;
+    box-shadow: 0 0px 3px 1px rgb(184, 184, 184) inset, 0 4px 15px 0px rgb(204, 204, 204);
+    background-color: rgb(240, 240, 240);
+    \\background-color: gray;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#content > #contentHolder > #sliderMenuHolder > #sliderMenuItemsHolder{
+    transition: 0.4s;
+    \\border: 1px solid rgb(160, 160, 160);
+    width: 240%;
+    height:60px;
+    padding: 0;
+    position: absolute;
+    left: -80%;
+
+}
+
+#content > #contentHolder > #sliderMenuHolder > #sliderMenuItemsHolder > .sliderMenuItems{
+    \\border:1px solid rgb(160, 160, 160) ;
+    box-shadow: 0 0 0px 1px rgb(211, 211, 211) inset;
+    width: 8.3333%;
+    height: 100%;
+    float:left;
+    text-align: center;
+    line-height: 60px;
+    font-family: mellatB;
+    font-size: 0.9em;
+    color: rgba(78, 78, 78, 0.822);
+    background: url("images/sliderMenuBG.png") no-repeat 100%;
+    position: relative;
+    
+
+}
+
+#content > #contentHolder > #sliderMenuHolder > #sliderMenuItemsHolder > .sliderMenuItems.active{
+    color: rgb(172, 0, 0);
+    transition:0.3s ;
+}
+
+#content > #contentHolder > #sliderMenuHolder > #sliderMenuItemsHolder > .sliderMenuItems > .sliderMenuItemsPics{
+    transition: 0.3s;
+    height: 33px;
+    width: 36px;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+}
+
+
+
+#content > #contentHolder > #sliderMenuHolder > #sliderMenuLeft{
+    width: 26px;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    background: url("images/left.png") no-repeat rgb(241, 241, 241) 60% ;
+    background-size: 100%;
+    box-shadow: 0 0 1px 2px rgb(211, 211, 211) inset;
+    
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#content > #contentHolder > #sliderMenuHolder > #sliderMenuLeft:hover { cursor: pointer; }
+#content > #contentHolder > #sliderMenuHolder > #sliderMenuRight:hover{ cursor: pointer; }
+
+#content > #contentHolder > #sliderMenuHolder > #sliderMenuRight{
+    width: 26px;
+    height: 50px;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    background: url("images/right.png") no-repeat rgb(241, 241, 241) 60% ;
+    background-size: 100%;
+    box-shadow: 0 0 1px 2px rgb(211, 211, 211) inset;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#content > #contentHolder > #sliderMenuHolder > #sliderMenuArrow{
+    transition: 0.4s;
+    width: 100%;
+    height: 10px;
+    \\border-top: 1px solid red;
+    \\border-bottom: 1px solid red;
+    position: absolute;
+    top: 61px;
+    background: url("images/arrow.png") no-repeat  50% ;
+  
+}
+
+#content > #contentHolder > #sliderMenuHolder > #sliderMenuSubMenu{
+    transition: 0.4s;
+    width: 1200%;
+    \\border-top: 1px solid red;
+    \\border-bottom: 1px solid red;
+    position: absolute;
+    top: 72px;
+    height: 386px;
+    padding:0 ;
+    left:-600%;
+
+}
+#content > #contentHolder > #sliderMenuHolder > #sliderMenuSubMenu > .sliderMenuItemsSubs{
+    float: left;
+    width: 8.333%;
+    height: 100%;
+    \\border: 1px solid rgb(160, 160, 160);
+    \\box-shadow:0 0 2px 1px rgba(173, 173, 173, 0.486) inset;
+    padding:0;
+    
+
+}
+#content > #contentHolder > #sliderMenuHolder > #sliderMenuSubMenu > .sliderMenuItemsSubs > div{
+    box-shadow: 0 0 0px 1px rgb(194, 194, 194) inset;
+    float: right;
+    width: 31%;
+    margin: 25px 0.5% 2% 0;
+    height: 84%;
+    border-radius: 10px;
+    position: relative;
+
+}
+#content > #contentHolder > #sliderMenuHolder > #sliderMenuSubMenu > .sliderMenuItemsSubs#it8 > div{
+    width: 23%;
+    margin-right: 0.666%;
+}
+
+#content > #contentHolder > #sliderMenuHolder > #sliderMenuSubMenu > .sliderMenuItemsSubs#it9 > div{
+    width: 98%;
+    margin-right: 1%;
+    margin-top: 0%;
+    height:104%;
+    direction: rtl;
+    overflow: scroll;
+    box-shadow: 0 0 0 0 gray inset;
+    font-family: iransans;
+    font-size: 10px;
+    line-height: 30px;
+    color: rgba(100, 100, 100, 0.795);
+    padding: 0px;
+
+}
+#content > #contentHolder > #sliderMenuHolder > #sliderMenuSubMenu > .sliderMenuItemsSubs#it9 > div > h2{
+    font-family: iransans;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 20px;
+    color: black;
+    
+}
+
+#content > #contentHolder > #sliderMenuHolder > #sliderMenuSubMenu > .sliderMenuItemsSubs > div > ul{
+    \\border: 1px solid red;
+    \\box-shadow: 0 0 1px 1px gray inset;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    font-family: mellatB;
+    font-size: 0.85em;
+    color: balck;
+    position: absolute;
+    top: -33px;
+    line-height: 35px;
+    
+    
+}
+#content > #contentHolder > #sliderMenuHolder > #sliderMenuSubMenu > .sliderMenuItemsSubs > div > ul > hr{
+    background:url("images/hr.png") ;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    border-style: hidden;
+    margin:0px 20% 0px 20%;
+    height: 2px;
+}
+ 
+#content > #contentHolder > #sliderMenuHolder > #sliderMenuSubMenu > .sliderMenuItemsSubs > div > ul > li{
+    text-align: right;
+    padding-right:10% ;
+    padding-left: 7%;
+    font-family: iransans;
+    font-size: 0.75em;
+    height: 10%;
+    margin-top: 2%;
+}
+
+#content > #contentHolder > #bottomSliderHolder{
+    width: 95%;
+    height: 260px;
+    box-shadow: 0 -5px 20px 0px rgba(173, 173, 173, 0.753) ;
+    margin: 0 auto 0 auto;
+    background: url("images/bottomSliderBG.png") repeat ;
+    position: relative ; 
+    overflow: hidden ; 
+    
+}
+#content > #contentHolder > #bottomSliderHolder > #bottomSlider {
+    transition: 0.3s;
+    width: 300% ; 
+    height: 100% ; 
+    position: absolute; 
+    left : -100% ; 
+    \\box-shadow: 0px 0px 0px 1px gray inset; 
+}
+#content > #contentHolder > #bottomSliderHolder >#bottomSlider > .bottomSliderItems {
+    
+    width: 8.333% ; 
+    height: 100% ; 
+    \\border: 1px solid red ;
+    \\box-shadow: 0px 0px 0px 1px gray inset; 
+    margin :0px 0px 0px 0px ; 
+    float: left;  
+    font-family: mj_flow_bold ;  
+    font-size: 16px ; 
+    line-height: normal; 
+    text-align: center ;  
+    color: #e71939 ; 
+    
+}
+#content > #contentHolder > #bottomSliderHolder >#bottomSlider > .bottomSliderItems > img {
+    margin-top: 60px ; 
+}
+#content > #contentHolder > #bottomSliderHolder >#bottomSlider > .bottomSliderItems:first-child {
+    margin-left: 0px ; 
+}
+
+#content > #contentHolder > #bottomSliderHolder > #bottomRight{
+    
+    
+    position: absolute;
+    top: 45%;
+    right: -12px;
+    z-index: 1000 ;  
+
+
+    \\border: 1px solid white;
+    \\border-radius: 5px;
+    width: 42px;
+    height: 42px;
+    background: url("images/arrow_right_link_slider.png") no-repeat ;
+    background-size: 50%;
+    cursor:pointer;
+}
+#content > #contentHolder > #bottomSliderHolder > #bottomRight:hover{
+    
+    background: url("images/arrow_right_link_slider_hover.png")  no-repeat ;
+
+
+}
+#content > #contentHolder > #bottomSliderHolder > #bottomleft{
+    
+    position: absolute;
+    top: 45%;
+    left: 10px;
+    z-index: 1000 ; 
+
+
+    \\border: 1px solid white;
+    \\border-radius: 5px;
+
+    width: 42px;
+    height: 42px;
+    background:url("images/arrow_left_link_slider.png") no-repeat  ;
+    background-size: 50%;
+    cursor:pointer;
+}   
+#content > #contentHolder > #bottomSliderHolder> #bottomleft:hover {
+   background: url("images/arrow_left_link_slider_hover.png") no-repeat ;
+    
+}
+
+
+
+
+#footer{
+    background: repeat url(images/header_bg.jpg) ;            
+    \\height: 314px;
+    padding-top: 15px;
+    margin-top: 0;
+}
+#footer > #footerHolder {
+    height: 276px ; 
+    width: 90%;
+    min-width: 830px;
+    max-width: 950px; 
+    position: relative ; 
+    \\box-shadow: 0px 0px 0px 1px white inset ; 
+    margin: 0px auto ; 
+}
+#footer > #footerHolder > #footerList {
+    width: 712px  ; 
+    height: 100% ; 
+    \\box-shadow : 0px 0px 0px 1px red inset ; 
+    position: absolute ; 
+    right: 0 ;  
+    
+}
+#footer > #footerHolder > #footerList > ul {
+    float: right ; 
+    font-family: Iransans ; 
+    font-size: 12px ; 
+    color: #ffffff ; 
+    line-height: 27px ; 
+    direction: rtl ; 
+    list-style: none ; 
+    cursor: pointer;
+    padding: 0;
+    margin-right: 30px;
+     
+}
+#footer > #footerHolder > #footerList > ul:first-child{
+    margin-right: 10px;
+}
+#footer > #footerHolder > #footerList > ul > .hrUl {
+    
+    
+    border: none;
+    border-top:1.5px solid #f4f4f4;
+    
+}
+
+#footer > #footerHolder > #footerList > ul > li {
+    width: 200px;
+    padding: 0px;
+    border-bottom: 1px dotted gray ;
+    color: #a0a1a2 ; 
+    line-height: 40px ; 
+    font-family: Iransans ; 
+    font-size: 10px ; 
+    font-weight: 400 ; 
+    cursor: pointer ; 
+    direction: rtl ; 
+}
+#footer > #footerHolder > #footerList > ul > li:last-child{
+    border-bottom: none;
+}
+#footer > #footerHolder > #footerList > ul > li:hover {
+    transition:0.3s;
+    color: #ffffff ; 
+}
+  #footer > #footerHolder > #footerLogo{
+    position: absolute;
+    left: 0px ; 
+    \\top: 20px;
+    \\box-shadow : 0px 0px 0px 1px green inset ; 
+    background: url("images/footerLogo.png") no-repeat;
+    height: 216px;
+    width: 238px;
+}
+
+#footer  > #footerLink {
+    height: 36px ;
+    \\box-shadow: 0px 0px 0px 1px white inset ; 
+    \\position: absolute;
+    margin : 0px auto ; 
+    \\bottom: -36px;
+    \\z-index: 1000px ;
+    background:url(images/footer-bottom-bg.png) ; 
+    
+}
+
+#footer  > #footerLink > #footerLinkHolder {
+    
+    \\box-shadow: 0px 0px 0px 1px red inset ; 
+    height: 100% ; 
+    width: 300px ; 
+    margin: 0px auto  ; 
+    z-index: 1000px ;  
+}
+
+#footer  > #footerLink > #footerLinkHolder > div {
+    border-left: 1px solid #a0a1a2 ;
+    float: right ; 
+    padding-left: 7px;
+    height: 16px ; 
+    margin:10px 7px 10px 0 ; 
+    direction: rtl ; 
+    font-size: 10px ; 
+    font-family: Iransans ; 
+    color: #a0a1a2 ;
+    cursor: pointer ; 
+    
+}
+#footer  > #footerLink > #footerLinkHolder > div:last-child {
+    border: none ; 
+    
+}
+
+#footer  > #footerLink > #footerLinkHolder > div:hover {
+    transition: 0.3s ; 
+    color: #ffffff ; 
+}
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
